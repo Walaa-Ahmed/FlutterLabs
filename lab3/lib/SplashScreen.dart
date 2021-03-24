@@ -1,4 +1,7 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
+import 'package:lab3/SignIn.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -11,7 +14,13 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
 
+      Timer(
+        Duration(seconds: 3),() => Navigator.push(context, MaterialPageRoute(builder: (_) => SignIn()),),);
+
+
+
   }
+
 
   @override
   Widget build(BuildContext context) {

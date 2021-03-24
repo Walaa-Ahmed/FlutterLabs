@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lab3/SignUp.dart';
 
 class SignIn extends StatefulWidget {
   @override
@@ -90,6 +91,9 @@ class signupState extends State<StatefulWidget> {
                       style:
                       TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                     ),
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (_) => SignUp()));
+                    },
                     style: ButtonStyle(
                       foregroundColor:
                       MaterialStateProperty.all<Color>(Colors.blue),
