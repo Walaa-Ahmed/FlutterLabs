@@ -49,7 +49,7 @@ class signupState extends State<StatefulWidget> {
               Container(
                 width: 300,
                 child: TextField(
-                  style: TextStyle(color: Colors.black45, fontSize: 20),
+                  style: TextStyle(color: Colors.black45, fontSize: 15),
                   cursorColor: Colors.grey,
                   decoration: InputDecoration(
                     hintText: "Username",
@@ -60,7 +60,7 @@ class signupState extends State<StatefulWidget> {
               Container(
                 width: 300,
                 child: TextField(
-                  style: TextStyle(color: Colors.black45, fontSize: 20),
+                  style: TextStyle(color: Colors.black45, fontSize: 15),
                   cursorColor: Colors.grey,
                   decoration: InputDecoration(
                     hintText: "Email Address",
@@ -74,12 +74,28 @@ class signupState extends State<StatefulWidget> {
                   obscureText: _isObscure,
                   style: TextStyle(
                     color: Colors.black45,
-                    fontSize: 20,
+                    fontSize: 15,
                   ),
                   cursorColor: Colors.grey,
                   keyboardType: TextInputType.visiblePassword,
                   decoration: InputDecoration(
                     hintText: "Password",
+                  ),
+                  maxLines: 1,
+                ),
+              ),
+              Container(
+                width: 300,
+                child: TextField(
+                  obscureText: _isObscure,
+                  style: TextStyle(
+                    color: Colors.black45,
+                    fontSize: 15,
+                  ),
+                  cursorColor: Colors.grey,
+                  keyboardType: TextInputType.visiblePassword,
+                  decoration: InputDecoration(
+                    hintText: "Confirm Password",
                   ),
                   maxLines: 1,
                 ),
@@ -109,7 +125,7 @@ class signupState extends State<StatefulWidget> {
                     )),
               ),
               SizedBox(
-                height: 30,
+                height: 35,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,

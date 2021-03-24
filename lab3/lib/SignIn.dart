@@ -47,7 +47,7 @@ class signupState extends State<StatefulWidget> {
               Container(
                 width: 300,
                 child: TextField(
-                  style: TextStyle(color: Colors.black45, fontSize: 20),
+                  style: TextStyle(color: Colors.black45, fontSize: 15),
                   cursorColor: Colors.grey,
                   decoration: InputDecoration(
                     hintText: "Username",
@@ -61,7 +61,7 @@ class signupState extends State<StatefulWidget> {
                   obscureText: _isObscure,
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 20,
+                    fontSize: 15,
                   ),
                   cursorColor: Colors.black,
                   keyboardType: TextInputType.visiblePassword,
