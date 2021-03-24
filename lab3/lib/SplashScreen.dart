@@ -62,7 +62,16 @@ class _SplashScreenState extends State<SplashScreen> {
                     Padding(
                       padding: EdgeInsets.only(top: 10.0),
                     ),
-                    Text("Flutter Ecommerce\n UI Template",style: TextStyle(color: Colors.white),)
+                    Text(
+                      "Flutter Ecommerce \n UI Template",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.w100,
+                        color: Colors.white,
+                        decoration: TextDecoration.none,
+                      ),
+                    ),
 
                   ],
                 ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:lab3/SignUp.dart';
 import 'package:lab3/SplashScreen.dart';
 import 'package:lab3/SignIn.dart';
+import 'package:lab3/Home.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.amber,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: SignIn(),
+      home: SignUp(),
     );
   }
 }
